@@ -1,0 +1,1400 @@
+/*
+Theme Name: BlankSlate
+Theme URI: https://github.com/tidythemes/blankslate
+Author: TidyThemes
+Author URI: http://tidythemes.com/
+Description: Please read: tidythemes.com/concept. BlankSlate is the definitive WordPress HTML5 boilerplate starter theme. We've carefully constructed the most clean and minimalist theme possible for designers and developers to use as a base to build websites for clients or to build completely custom themes from scratch. Clean, simple, unstyled, semi-minified, unformatted, and valid code, SEO-friendly, jQuery-enabled, no programmer comments, standardized and as white label as possible, and most importantly, the CSS is reset for cross-browser-compatability and no intrusive visual CSS styles have been added whatsoever. A perfect skeleton theme. For support and suggestions, go to: https://github.com/tidythemes/blankslate/issues. Thank you.
+Version: 2019.1
+License: GNU General Public License
+License URI: https://www.gnu.org/licenses/gpl.html
+Tags: one-column, two-columns, custom-menu, featured-images, microformats, sticky-post, threaded-comments, translation-ready
+Text Domain: blankslate
+
+BlankSlate WordPress Theme © 2011-2019 TidyThemes
+BlankSlate is distributed under the terms of the GNU GPL
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline
+}
+
+body {
+  line-height: 1;
+}
+
+@font-face{
+  font-family:'Landsdowne';
+  src:url('font/Landsdowne.woff');
+  font-style:normal;
+  font-weight: 700;
+}
+
+p{
+  font-size: 20px;
+}
+    
+.nav-button{
+  display: none;
+}
+
+.primary-nav{
+    display: inline-flex;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.primary-nav li a {
+    text-decoration: none;
+    font-size: 25px;
+    margin: 0 60px;
+    color: #000000;
+}
+
+.primary-nav li a:hover {
+  color: #084B83;
+  transition: 0.5s;
+}
+#content{
+    width: 59%;
+    float: left;
+    margin-bottom: 30px;
+    padding: 10px;
+    line-height: 1.8;
+    margin-top: -9999px;
+	  margin-bottom: -9999px;
+	  padding-top: 9999px;
+    padding-bottom: 9999px;
+    background: rgba(158, 208, 243, 0.2);
+}
+
+#content-1{
+  width: 64%;
+  float: left;
+  margin-bottom: 30px;
+  line-height: 1.8;
+  margin-top: -9999px;
+  margin-bottom: -9999px;
+  padding-top: 9999px;
+  padding-bottom: 9999px;
+  background: rgba(158, 208, 243, 0.2);
+  overflow: hidden;
+}
+
+#content-2 {
+  width: 65%;
+  float: left;
+  margin-bottom: 30px;
+  padding: 10px;
+  line-height: 1.8;
+  margin-top: -9999px;
+  margin-bottom: -9999px;
+  padding-top: 9999px;
+  padding-bottom: 9999px;
+  background: rgba(158, 208, 243, 0.2);
+}
+
+
+.post-date {
+  margin-left: 20px;
+}
+
+.wp-image-19, .wp-image-81 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wp-image-81{
+  padding:15px;
+}
+.custom-html-widget{
+  padding: 10px;
+}
+
+.music-clip{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.media{
+  height: 60px;
+  text-align: center;
+  background:rgba(255, 255, 255, 0.53);
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+
+}
+
+#facebook{
+  background-image: url('https://www.holisticpronerd.com/KaiNanfelt_Music/wp-content/uploads/2020/08/icons8-facebook-48.png');
+  height: 48px;
+  width: 48px;
+}
+
+#facebook:hover {
+  background-image: url('https://www.holisticpronerd.com/KaiNanfelt_Music/wp-content/uploads/2020/08/icons8-facebook-48-1.png');
+  transition: 0.5s;
+}
+
+#instagram {
+  background-image: url('https://www.holisticpronerd.com/KaiNanfelt_Music/wp-content/uploads/2020/08/icons8-instagram-48.png');
+  height: 48px;
+  width: 48px;
+}
+
+#instagram:hover {
+  transition: 0.5s;
+  background-image: url('https://www.holisticpronerd.com/KaiNanfelt_Music/wp-content/uploads/2020/08/icons8-instagram-48-1.png');
+}
+
+#twitter{
+  background-image: url('https://www.holisticpronerd.com/KaiNanfelt_Music/wp-content/uploads/2020/08/icons8-twitter-squared-48.png');
+  height: 48px;
+  width: 48px;
+}
+
+#twitter:hover {
+  transition: 0.5s;
+  background-image: url('https://www.holisticpronerd.com/KaiNanfelt_Music/wp-content/uploads/2020/08/icons8-twitter-48-1.png');
+}
+
+#soundcloud {
+  background-image: url('https://www.holisticpronerd.com/KaiNanfelt_Music/wp-content/uploads/2020/08/SoundCloud.png');
+  height: 48px;
+  width: 48px;
+}
+
+#soundcloud:hover {
+  transition: 0.5s;
+  background-image: url('https://www.holisticpronerd.com/KaiNanfelt_Music/wp-content/uploads/2020/08/sound.png');
+}
+
+#spotify {
+  background-image: url('https://www.holisticpronerd.com/KaiNanfelt_Music/wp-content/uploads/2020/08/icons8-spotify-48.png');
+  height: 48px;
+  width: 48px;
+}
+
+#spotify:hover {
+  transition: 0.5s;
+  background-image: url('https://www.holisticpronerd.com/KaiNanfelt_Music/wp-content/uploads/2020/08/icons8-spotify-48-1.png');
+}
+
+#apple {
+  background-image: url('https://www.holisticpronerd.com/KaiNanfelt_Music/wp-content/uploads/2020/08/apple-ConvertImage.png');
+  height: 50px;
+  width: 37px;
+}
+
+#apple:hover {
+  transition: 0.5s;
+  background-image: url('https://www.holisticpronerd.com/KaiNanfelt_Music/wp-content/uploads/2020/08/apple.png');
+}
+
+#youtube{
+  background-image: url('https://www.holisticpronerd.com/KaiNanfelt_Music/wp-content/uploads/2020/08/icons8-youtube-48.png');
+  height: 48px;
+  width: 48px;
+}
+
+#youtube:hover {
+  transition: 0.5s;
+  background-image: url('https://www.holisticpronerd.com/KaiNanfelt_Music/wp-content/uploads/2020/08/icons8-youtube-48-1.png');
+}
+
+#container{
+  overflow: hidden;
+}
+
+#container-1{
+  
+  overflow: hidden;
+  margin-top: 260px;
+
+}
+
+.entry-content p{
+  margin-left: 15px;
+}
+
+#parent{
+  position: relative;
+  height: 100px;
+  width: 100px;
+}
+
+
+#music{
+  background: url('https://www.holisticpronerd.com/KaiNanfelt_Music/wp-content/uploads/2020/08/Image-from-iOS-1-scaled.jpg');
+  margin-top: 10px;
+}
+
+#music:before{
+  content: "";
+    position: absolute;
+    width : 100%;
+    height: 150%;
+    background: inherit;
+    z-index: -1;
+
+    filter: blur(40px);
+}
+
+.play-button a {
+  color: #000;
+}
+
+.play-music{
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+
+#contact{
+  background-color: #9ED0F3;
+  padding: 15px;
+}
+.picture{
+  display: block;
+  margin-left: auto;
+  margin-right: auto 
+}
+
+.row-music{
+  width: 500px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  background: #F8FDFE;
+  border: 1px solid #eee;
+}
+
+.play{
+  margin-top: 15px;
+  border: 1px solid #CBCFD4;
+  border-radius: 5px;
+  padding: 7px 10px;
+  width: 110px;
+  background-color: #F8FDFE;
+}
+
+.play a:hover {
+  color: #0B4B83;
+}
+
+#sbi_load{
+  display: none;
+}
+
+#comments{
+  margin-top: 50px;
+
+}
+
+#respond{
+  border-top: 1px solid #656565;
+}
+
+#reply-title{
+  padding: 25px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.entry-footer{
+  padding: 25px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.entry-footer a:hover{
+  color:#084B83;
+}
+
+.nav-links{
+  padding: 15px;
+}
+
+.nav-next a{
+  font-weight: 700;
+  font-size: 25px;
+  float: left;
+  margin-right: 15px;
+}
+.nav-next a:hover{
+  color:#084B83;
+}
+.nav-previous a{
+  font-weight: 700;
+  font-size: 25px;
+  float: right;
+  margin-right: 15px;
+}
+.nav-previous a:hover{
+  color:#084B83;
+}
+#icon-1 {
+  background-image: url('https://www.holisticpronerd.com/KaiNanfelt_Music/wp-content/uploads/2020/08/spotify_color-ConvertImage.png');
+  height: 42px;
+  width: 140px;
+}
+
+#icon-1:hover {
+  background-image: url('https://www.holisticpronerd.com/KaiNanfelt_Music/wp-content/uploads/2020/08/spotify_color.png');
+  transition: 0.5s;
+}
+
+#icon-2 {
+  background-image: url('https://www.holisticpronerd.com/KaiNanfelt_Music/wp-content/uploads/2020/08/apple_color-ConvertImage.png');
+  height: 50px;
+   width: 132px;
+}
+
+#icon-2:hover {
+  transition: 0.5s;
+  background-image: url('https://www.holisticpronerd.com/KaiNanfelt_Music/wp-content/uploads/2020/08/apple_color.png');
+}
+
+#icon-3 {
+  background-image: url('https://www.holisticpronerd.com/KaiNanfelt_Music/wp-content/uploads/2020/08/itune_color-ConvertImage.png');
+  height: 29px;
+  width: 140px;
+  margin-top: 15px;
+}
+
+#icon-3:hover {
+  transition: 0.5s;
+  background-image: url('https://www.holisticpronerd.com/KaiNanfelt_Music/wp-content/uploads/2020/08/itune_color.png');
+}
+
+#icon-4 {
+  background-image: url('https://www.holisticpronerd.com/KaiNanfelt_Music/wp-content/uploads/2020/08/deezer_color-ConvertImage.png');
+  height: 79px;
+  width: 140px;
+}
+
+#icon-4:hover {
+  transition: 0.5s;
+  background-image: url('https://www.holisticpronerd.com/KaiNanfelt_Music/wp-content/uploads/2020/08/deezer_color.png');
+}
+
+#icon-5 {
+  background-image: url('https://www.holisticpronerd.com/KaiNanfelt_Music/wp-content/uploads/2020/08/amazon_black.png');
+  height: 39px;
+  width: 140px;
+  margin-top: 15px;
+}
+
+#icon-5:hover {
+  transition: 0.5s;
+  background-image: url('https://www.holisticpronerd.com/KaiNanfelt_Music/wp-content/uploads/2020/08/amazonmusic_color.png');
+}
+
+#icon-6 {
+  background-image: url('https://www.holisticpronerd.com/KaiNanfelt_Music/wp-content/uploads/2020/08/youtube_color-ConvertImage.png');
+  height: 78px;
+  width: 140px;
+}
+
+#icon-6:hover {
+  transition: 0.5s;
+  background-image: url('https://www.holisticpronerd.com/KaiNanfelt_Music/wp-content/uploads/2020/08/youtube_color.png');
+}
+
+#icon-7 {
+  background-image: url('https://www.holisticpronerd.com/KaiNanfelt_Music/wp-content/uploads/2020/08/pandora_color-ConvertImage.png');
+  height: 79px;
+  width: 140px;
+}
+
+#icon-7:hover {
+  transition: 0.5s;
+  background-image: url('https://www.holisticpronerd.com/KaiNanfelt_Music/wp-content/uploads/2020/08/pandora_color.png');
+}
+#hero {
+  background-image: url('https://www.holisticpronerd.com/KaiNanfelt_Music/wp-content/uploads/2020/08/kai-scaled.jpg');
+  /* width: 100%; */
+  min-height: 1000px;
+  height: auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#hero-1 {
+  background-image: url('https://www.holisticpronerd.com/KaiNanfelt_Music/wp-content/uploads/2020/08/Webp.net-resizeimage-1-scaled.jpg');
+  /* width: 100%; */
+  min-height: 1000px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.entry-summary, .entry-title, .entry-meta{
+  padding: 25px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.entry-title a:hover{
+  color:#084B83;
+}
+
+.entry-title{
+  font-size: 55px;
+}
+
+.entry-title a {
+  color: #000;
+}
+
+#menu{
+    transition: 0.5s;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 200;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.4);
+    margin-bottom: 15px;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+}
+
+
+#sidebar{
+    width: 41%;;
+    float: right;
+    line-height: 1.6;
+    padding: 35px;
+    background: #9ED0F3;
+    margin-top: -9999px;
+	  margin-bottom: -9999px;
+	  padding-top: 9999px;
+	  padding-bottom: 9999px;
+}
+
+#sidebar p{
+    margin-top:10px;
+}
+
+#sidebar-1{
+  width: 36%;
+  float: right;
+  line-height: 1.6;
+  padding: 45px;
+  margin-top: -9999px;
+  margin-bottom: -9999px;
+  padding-top: 9999px;
+  padding-bottom: 9999px;
+}
+.wp-image-78{
+  width: 100%;
+  background-size: contain;
+  height: auto;
+}
+
+#media_image-2{
+  margin-top: 50px;
+}
+
+#media_image-2, #custom_html-3{
+  background: #FDF4B3;
+  padding: 20px;
+  list-style-type: none;
+}
+
+.entry-content p{
+  padding: 25px;
+  font-size: 20px;
+}
+
+.entry-date{
+  color: #0B4B83;
+}
+.submit{
+  background: #084B83;
+  border: 1px solid #084B83;
+  box-sizing: border-box;
+  border-radius: 20px;
+  color: #F8FDFE;
+  padding: 10px;
+  width: 150px;
+}
+
+.submit:hover{
+  background: #9ED0F3;
+}
+
+
+
+.about{
+  background: #084B83;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  padding: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
+
+}
+
+.about a {
+  color:#F8FDFE;
+  text-decoration: none;
+  padding: 20px 15px;
+ 
+}
+.row {
+    margin-left: 35px;
+}
+
+#sidebar-2 {
+  width: 35%;
+  float: right;
+  line-height: 1.6;
+  padding: 25px;
+  background: #9ED0F3;
+  margin-top: -9999px;
+  margin-bottom: -9999px;
+  padding-top: 9999px;
+  padding-bottom: 9999px;
+}
+
+a, span{
+  color: #000;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.cat-item {
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+#categories-3 a:hover, #recent-posts-2 a:hover {
+  color:#fff;
+}
+
+#recent-posts-2 li{
+
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+#categories-3{
+  margin-bottom: 40px;
+}
+
+#categories-3{
+  margin-top: 10px;
+}
+
+
+
+#footer{
+    background: #f5f5dc;
+    clear: both;
+    width: 100%;
+    bottom: 0;
+    padding-left:20px;
+    top: 2000px;
+    text-align: center;
+    font-family:'Open Sans', sans-serif;
+    letter-spacing: 0.15em;
+    font-weight: 700;
+}
+.kai-logo{
+  margin-top: 15px;
+}
+
+#copyright{
+  padding: 15px 0;
+}
+
+.main-title{
+  text-align: center;
+  font-size: 40px;
+  color: #000000;
+  font-weight: bold;
+  margin: 30px 0 20px;
+  letter-spacing: 0.1em;
+}
+
+.home-title{
+font-family: 'Landsdowne';
+font-weight: 700;
+font-size: 60px;
+line-height: 70px;
+margin: 20px 25px 30px;
+
+color: #000000;
+
+}
+
+.widget-title{
+  font-size: 40px;
+  color: #000000;
+  letter-spacing: 0.02em;
+  font-weight: 700;
+  margin-top: 40px;
+  padding: 25px;
+
+}
+
+li{
+  list-style-type:none;
+}
+p,label,h2,h3{
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+#site-title{
+    font-size: 6.28em;
+    text-align: center;
+    margin-top: 10px;
+    
+    
+}
+#site-title a:hover {
+ color: #084B83;
+}
+
+#site-title a {
+    color: #000000;
+    font-family: landsdowne;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    transition: 0.6s;
+    word-spacing: 5px;
+}
+.primary-nav a{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+ }
+
+.title a {
+  color: #000000;
+  font-family: 'Landsdowne';
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  transition: 0.6s;
+}
+
+.wp-image-154{
+  width: 100%;
+  height: auto;
+}
+
+/* form*/
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+ 
+  #word{
+    margin-left: 15px;
+    padding: 15px;
+    font-family: landsdowne;
+    font-size: 70px;
+    font-weight: 700;
+  }
+
+  form{
+    margin-left: 15px;
+    padding: 15px;
+  }
+ 
+  .col-25 {
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-35 {
+    float: left;
+    width: 35%;
+    margin-top: 6px;
+  }
+  
+  .row-2{
+      float: right;
+      margin-top: -11em;
+      margin-right: 120px;
+      width: 45%;
+  }
+
+  .row-3{
+      margin-top: 20px;
+  }
+
+  /* Clear floats after the columns */
+  .row-1:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+/* The container */
+.container {
+    display: block;
+    position: relative;
+    padding: 5px 25px 10px 30px;
+    margin-top: 20px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+/* form end*/
+
+button {
+	outline: 0
+}
+
+.more-link:hover{
+    color:#0B4B83;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+  margin-bottom:15px;
+}
+ol,
+ul {
+	list-style: none
+}
+
+blockquote,
+q {
+	quotes: none
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none
+}
+
+q {
+	display: inline;
+	font-style: italic
+}
+
+q:before {
+	content: '"';
+	font-style: normal
+}
+
+q:after {
+	content: '"';
+	font-style: normal
+}
+
+textarea,
+input[type="text"],
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="search"],
+input[type="password"] {
+	-webkit-appearance: none;
+	appearance: none;
+	border-radius: 0
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+
+th,
+td {
+	padding: 2px
+}
+
+big {
+	font-size: 120%
+}
+
+small,
+sup,
+sub {
+	font-size: 80%
+}
+
+sup {
+	vertical-align: super
+}
+
+sub {
+	vertical-align: sub
+}
+
+dd {
+	margin-left: 20px
+}
+
+kbd,
+tt {
+	font-family: courier;
+	font-size: 12px
+}
+
+ins {
+	text-decoration: underline
+}
+
+del,
+strike,
+s {
+	text-decoration: line-through
+}
+
+dt {
+	font-weight: bold
+}
+
+address,
+cite,
+var {
+	font-style: italic
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block
+}
+
+* {
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: transparent
+}
+
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 701px) {
+
+  #content-1{
+    width: 55%;
+    float: left;
+    margin-bottom: 30px;
+    line-height: 1.8;
+    margin-top: -9999px;
+    margin-bottom: -9999px;
+    padding-top: 9999px;
+    padding-bottom: 9999px;
+    background: rgba(158, 208, 243, 0.2);
+  }
+  
+  #sidebar-1{
+    width: 45%;
+    float: right;
+    line-height: 1.6;
+    padding: 45px;
+    margin-top: -9999px;
+    margin-bottom: -9999px;
+    padding-top: 9999px;
+    padding-bottom: 9999px;
+  }
+
+  .social-media {
+    margin: 0 15px;
+}
+}
+
+@media only screen and (max-width: 800px) and (min-width: 701px) {
+
+  .primary-nav {
+    /* display: inline-flex; */
+    margin: 10px -5em;
+    /* margin-top: 40px; */
+    /* margin-bottom: 20px; */
+}
+
+
+}
+
+@media only screen and (min-width: 701px) {
+  .title{
+    display: none;
+  }
+
+  /*form*/
+
+  #sidebar-1{
+    background: rgba(158, 208, 243, 0.8);
+  }
+}
+
+@media only screen and (max-width: 700px) {
+
+  .form-inline input {
+    margin: 10px 0;
+  }
+  
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .media{
+    display: none;
+  }
+  #container{
+    background: #9ED0F3;
+    width: 200%;
+  }
+
+  #container-1 {
+    margin-top: 80px;
+    background: #9ED0F3;
+    width: 200%;
+  }
+
+  #content{
+    width: auto;
+    margin-bottom: 30px;
+    margin-top: 0px;
+    margin-left: -0.2em;
+    padding: 20px;
+  }
+
+  #content-1{
+    width: auto;
+    margin-bottom: 30px;
+    margin-top: 0px;
+    margin-left: -0.2em;
+    padding: 0px;
+    background: none;
+  }
+
+  #content-2{
+    width: auto;
+    margin-bottom: 30px;
+    margin-top: 0px;
+    margin-left: -0.2em;
+    padding: 20px;
+  }
+ 
+  .entry-content, .entry-summary{
+    font-size: 20px;
+  }
+
+ 
+
+  #hero{
+    min-height: 350px;
+  }
+
+  #sidebar{
+    width: auto;
+    float: none;
+    height: auto;
+    padding: 0;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    background: none;
+  }
+
+  #sidebar-1{
+    display: none;
+  }
+
+  #sidebar-2{
+    width: auto;
+    float: none;
+    height: auto;
+    padding: 25px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    background: none;
+  }
+
+  #sidebar-2 li{
+    padding: 10px;
+  }
+
+
+.post-date{
+    margin-left: 15px;
+}
+
+#site-title{
+  display: none;
+}
+
+#footer {
+  
+  margin-top: 0px;
+  top: 0px;
+  width: 200%;
+  
+}
+
+
+.title {
+    font-size: 2.5em;
+    color: #000000;
+    font-family: landsdowne;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+
+}
+
+form{
+  margin-left: 0px;
+  padding: 20px;
+}
+
+.comment-form{
+  margin-left: 0;
+}
+
+.row-2 {
+    width: 100%;
+    float: none;
+    margin-top: 5px;
+}
+
+.col-35 {
+  float: left;
+  width: 100%;
+  margin-top: 6px;
+}
+
+label {
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+#instagram-feed-widget-2{
+  padding: 10px;
+}
+
+
+ 
+#contact{
+  width: 200%;
+}
+
+#music{
+  margin-top: -1em;
+  background: #9ED0F3;
+}
+
+#music:before{
+  filter: none;
+  width: 200%;
+  height: 200%;
+}
+
+.play-music{
+  margin-left: auto;
+  margin-right: auto;
+  width: 11em;
+
+}
+
+.subscribe{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  
+}
+
+.entry-content p, .entry-summary, .entry-meta, .cat-item a, #recent-posts-2 li a{
+  font-size: 30px;
+}
+
+
+#hero{
+    width: 200%;
+    background-size: 100%;
+    /* max-width: 100%; */
+}
+
+#hero-1{
+  width: 200%;
+  min-height: 450px;
+  /* max-width: 100%; */
+
+}
+
+.join{
+  width: 200%;
+}
+
+/* Navigation Button
+	-------------------------------------------------------- */
+
+	.nav-button {
+		display: block;
+		float:right;
+		top: 7px;
+    left: 7px;
+    margin-right: 20px;
+		width: 50px;
+		height: 35px;
+		background: url('https://www.holisticpronerd.com/KaiNanfelt_Music/wp-content/uploads/2020/08/1-1.png');
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: 40px, 100%;
+		cursor: pointer;
+		border: 0 none;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+    z-index: 999;
+    text-indent: -9999px;
+    margin-top: 10px;
+	}
+
+	.nav-button.open {
+		background: url('https://www.holisticpronerd.com/KaiNanfelt_Music/wp-content/uploads/2020/08/1-2.png');
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: 40px, 100%;
+	}
+
+	/* Navigation Bar
+	-------------------------------------------------------- */
+ #menu{
+   overflow:visible;
+   height: 80px;
+ }
+
+
+  .primary-nav{ 
+		width: 200%;
+		float: none;
+		display: block;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		position: absolute;
+		left: 0px;
+		z-index: 998;
+    clear: both;
+    margin-top: 60px;
+    background: rgba(255, 255, 255, 0.9);
+	}
+  .primary-nav li {
+		display: none;
+		width: 100%;
+		font-family: Arial;
+	}
+  .primary-nav li a {
+		display: block;
+		width: 100%;
+		padding: 25px 5%;
+		font-size: 20px;
+		font-weight: bold;
+		text-shadow: -1px -1px 0 rgba(0,0,0,.15);
+		color: black;
+		text-decoration: none;
+		border-bottom: 1px solid rgba(0,0,0,.2);
+    border-top: 1px solid rgba(255,255,255,.1);
+    margin: 0;
+    text-align: left;
+    margin-left: -0.5em;
+	}
+  .primary-nav li a:hover {
+		background-color: rgba(0,0,0,.5);
+		border-top-color: transparent;
+	}
+  .primary-nav> li:first-child {
+		border-top: 1px solid rgba(0,0,0,.2);
+	}
+
+	/* Toggle the navigation bar open  */
+
+  .primary-nav.open {
+    height: auto;
+    margin-top: 70px;
+	}
+  .primary-nav.open li {
+		display: block;
+	}
+
+	/* Submenus – optional .parent class indicates dropdowns */
+
+	
+
+} /* End Mobile Styles */
+
+
+
